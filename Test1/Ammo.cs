@@ -2,7 +2,7 @@
 
 namespace Test1
 {
-    public class Ammo : IEquatable<Ammo>
+    public class Ammo : IEquatable<Ammo>, IComparable<Ammo>
     {
         public string Name { get; private set; }
         public Caliber Caliber { get; private set; }
@@ -27,5 +27,20 @@ namespace Test1
         }
 
         public override string ToString() => Name;
+
+        public int CompareTo(Ammo other)
+        {
+            if (Equals(other))
+            {
+                return 0;
+            }
+
+            if (Caliber.Diameter < other.Caliber.Diameter)
+            {
+                return -1;
+            }
+
+            return 1;
+        }
     }
 }
