@@ -1,8 +1,6 @@
-﻿using System;
-
-namespace Test1
+﻿namespace Test1
 {
-    partial class Program
+    class Program
     {
         static void Main(string[] args)
         {
