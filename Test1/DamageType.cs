@@ -3,7 +3,7 @@
 namespace Test1
 {
     [Flags]
-    public enum DamageType : int
+    public enum DamageType : short
     {
         HighExplosive = 1 << 0,
         Tracing = 1 << 1,

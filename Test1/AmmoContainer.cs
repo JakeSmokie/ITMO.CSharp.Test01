@@ -1,12 +1,11 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 
 namespace Test1
 {
     class AmmoContainer : IEnumerable
     {
-        private List<Ammo> warehouse;
+        private List<Ammo> warehouse = new List<Ammo>();
 
         public void Add(Ammo ammo) => warehouse.Add(ammo);
         public void Remove(Ammo ammo) => warehouse.Remove(ammo);
