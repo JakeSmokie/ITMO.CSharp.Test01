@@ -6,6 +6,7 @@ namespace Test1
     {
         static void Main(string[] args)
         {
+            //Хранимый на армейском складе боеприпас
 
         }
     }
