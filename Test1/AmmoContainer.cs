@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Test1
 {
-    class AmmoContainer : IEnumerable
+    public class AmmoContainer : IEnumerable
     {
         private List<Ammo> warehouse = new List<Ammo>();
 
